@@ -1,0 +1,16 @@
+# version: '3.3'
+
+services:
+  node:
+    tty: true
+    image: node:18-alpine3.19
+    container_name: budget_app
+    volumes:
+      - ./app:/app
+    environment:
+      - MONGO_URI="${MONGO_URI}"
+      - PORT="${PORT}"
+    #command: npm run dev
+    ports:
+      - "${PORT}:${PORT}"
+    working_dir: /app
