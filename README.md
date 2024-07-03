@@ -6,13 +6,16 @@ server: {
     port: 5173
 }
 
+## Model
+https://dev.to/osiroski/backend-nodejs-mongodb-express-typescript-431i
+
 ## Create the Container
 docker compose up --build -d
 
 ## Create
-npm init -y
-npm i express mongoose mongodb dotenv mongodb
-npm i --save-dev typescript @types/node @types/express ts-node-dev
+- npm init -y
+- npm i express mongoose mongodb dotenv mongodb
+- npm i --save-dev typescript @types/node @types/express ts-node-dev
 
 ## Storage Permissions
 
